@@ -1,26 +1,29 @@
-# Slim Framework 3 Skeleton Application
+# RGU Computing Society Site
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+This is the current source code for the RGU Computing Society [website](www.rgucs.com).
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+# Running The Site
+## Using Command Line
 
-## Install the Application
+Running this command locally within the `public/` directory will allow you to serve requests.
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+    php -S [hostname]:[port] index.php
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+Replace `[hostname]` with `localhost` to run locally or the IP address / hostname of your computer.
+Also replace `[port]` with the port of your choosing `80` is the port used for HTTP traffic.
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+## Using Hosting Software
 
+If you intend on running it using Apache or nginx
 * Point your virtual host document root to your new application's `public/` directory.
 * Ensure `logs/` is web writeable.
 
-To run the application in development, you can also run this command. 
+## Using Composer
+
+To run the application in development, you can also run this command.
 
 	php composer.phar start
 
 Run this command to run the test suite
 
 	php composer.phar test
-
-That's it! Now go build something cool.
