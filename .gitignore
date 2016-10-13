@@ -1,4 +1,7 @@
 /vendor/
+/cache/
+
 /logs/*
 !/logs/README.md
+
 composer.lock
