@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller;
+namespace Site\Controller;
 
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
@@ -13,5 +13,9 @@ class MainController extends Controller {
 
   public function about(Request $request, Response $response, $args) {
     return $this->ci->view->render($response, 'about.twig');
+  }
+
+  public function join_us(Request $request, Response $response, $args) {
+    return $this->ci->view->render($response, 'join_us.twig');
   }
 }
