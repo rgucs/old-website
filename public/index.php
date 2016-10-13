@@ -11,12 +11,6 @@ if (PHP_SAPI == 'cli-server') {
 
 require __DIR__ . '/../vendor/autoload.php';
 
-// Require all of my own classes
-spl_autoload_register(function ($classname) {
-    $file = strtolower(str_replace("\\", "/", $classname));
-    require(__DIR__ . "/../src/" . $file . ".php");
-});
-
 session_start();
 
 // Instantiate the app

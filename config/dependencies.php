@@ -29,6 +29,19 @@ $container['logger'] = function ($c) {
   return $logger;
 };
 
+// Service factory for the ORM
+$container['database'] = function ($c) {
+  $settings = $c->get('settings')['database'];
+
+  $capsule = new \Illuminate\Database\Capsule\Manager;
+  $capsule->addConnection($settings);
+
+  $capsule->setAsGlobal();
+  $capsule->bootEloquent();
+
+  return $capsule;
+};
+
 $container['notFoundHandler'] = function($c) {
   return function($request, $response) use ($c) {
     return $c['view']->render($response, '404.twig');
