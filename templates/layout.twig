@@ -1,0 +1,70 @@
+{% import "navbar.macro.twig" as navbar %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Computing Society{% endblock %}</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <style type="text/css">
+      body {
+        margin-top: 50px;
+      }
+
+      .text-white {
+        color: white !important;
+      }
+
+      .padding-footer {
+        padding-top: 2em;
+      }
+    </style>
+  </head>
+  <body lang="en">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rgucs-main-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><span class="text-white">RGU :</span> Computing Society</a>
+        </div>
+        <div class="collapse navbar-collapse" id="rgucs-main-navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/join-us">Join Us</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+          <div class="pull-right hidden-xs">
+            <span class="navbar-text hidden-sm">Connect with us:</span>
+            <a class="btn btn-success navbar-btn" href="mailto:compsoc@rgu.ac.uk"><i class="fa fa-fw fa-envelope"></i></a>
+            <a class="btn btn-primary navbar-btn" href="https://www.facebook.com/RGUComputingSociety"><i class="fa fa-fw fa-facebook"></i></a>
+            <a class="btn btn-info navbar-btn" href="https://twitter.com/RGU_CS"><i class="fa fa-fw fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+      <div class="text-center padding-footer">
+        Copyright &copy; {{ "now"|date("Y") }} &bull; Crafted with <i class="fa fa-heart text-danger"></i> by RGU Students
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </footer>
+  </body>
+</html>

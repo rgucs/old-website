@@ -1,0 +1,19 @@
+{% extends "layout.twig" %}
+
+{% block title %}Not Found - {{ parent() }}{% endblock %}
+
+{% block content %}
+<!-- Main content -->
+<section class="container">
+  <div class="error-page">
+    <h2 class="headline text-warning"><i class="fa fa-warning"></i> 404 - Not Found</h2>
+    <div class="error-content">
+      <h3> Oops! Page cannot be found.</h3>
+      <p>
+        We could not find the page you were looking for.
+        Meanwhile, you may <a href="/">return to the home page</a>
+      </p>
+    </div><!-- /.error-content -->
+  </div><!-- /.error-page -->
+</section><!-- /.content -->
+{% endblock %}
