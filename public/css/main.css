@@ -1,0 +1,11 @@
+body {
+  margin-top: 50px;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.padding-footer {
+  padding-top: 2em;
+}
