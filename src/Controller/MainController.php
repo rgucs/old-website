@@ -10,4 +10,8 @@ class MainController extends Controller {
     // Render index view
     return $this->ci->view->render($response, 'home.twig');
   }
+
+  public function about(Request $request, Response $response, $args) {
+    return $this->ci->view->render($response, 'about.twig');
+  }
 }
