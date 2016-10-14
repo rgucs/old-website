@@ -1,0 +1,27 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="container">
+  <br>
+  <h1>{{ poll.title }}</h1>
+  <p>
+    {{ poll.description }}
+  </p>
+
+  <form class="" action="{{ path_for('vote', { 'id' : poll.id }) }}" method="post">
+    {% for choice in choices %}
+      <div class="radio">
+        <label for="">
+          <input type="radio" name="choice" value="{{ choice.id }}" />
+          {{ choice.choice }}
+        </label>
+      </div>
+    {% endfor %}
+
+    <a href="{{ path_for('polls') }}" class="btn btn-warning"> Cancel </a>
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
+</div>
+
+{% endblock %}
