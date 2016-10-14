@@ -17,7 +17,7 @@
   </head>
   <body lang="en">
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rgucs-main-navbar" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -25,14 +25,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"><span class="text-white">RGU :</span> Computing Society</a>
+          <a class="navbar-brand" href="/"><span class="text-black">RGU :</span> Computing Society</a>
         </div>
         <div class="collapse navbar-collapse" id="rgucs-main-navbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/join-us">Join Us</a></li>
-            <li><a href="/about">About</a></li>
+            {{ navbar.link(path_for('events'), 'Events', is_current_path('events')) }}
+            {{ navbar.link(path_for('about'), 'About', is_current_path('about')) }}
+            {{ navbar.link(path_for('join-us'), 'Join Us', is_current_path('join-us')) }}
           </ul>
           <div class="pull-right hidden-xs">
             <span class="navbar-text hidden-sm">Connect with us:</span>
