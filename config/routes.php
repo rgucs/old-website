@@ -6,5 +6,6 @@ $app->get('/join_us', '\Site\Controller\MainController:join_us')->setName('join-
 
 $app->get('/polls', '\Site\Controller\PollController:index')->setName('polls');
 $app->get('/poll/{id}', '\Site\Controller\PollController:poll')->setName('poll');
+$app->post('/poll/{id}/vote', '\Site\Controller\PollController:vote')->setName('vote');
 
 $app->get('/events', '\Site\Controller\EventController:index')->setName('events');
