@@ -6,6 +6,19 @@ body {
   color: white !important;
 }
 
+.text-black {
+  color: black !important;
+}
+
 .padding-footer {
   padding-top: 2em;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.profile h3 {
+  margin-top: 0;
 }
