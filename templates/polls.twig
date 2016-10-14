@@ -1,1 +1,26 @@
 {% extends "layout.twig" %}
+
+{% block content %}
+
+<br />
+
+<div class="container">
+  <div class="row">
+  {% for poll in polls %}
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">{{ poll.title }}</div>
+        <div class="panel-body">
+          {{ poll.description }}
+        </div>
+        <div class="panel-footer">
+          <span class="pull-right"><a href="{{ path_for('poll', { 'id' : poll.id }) }}" class="btn btn-primary">Vote</a></span>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
