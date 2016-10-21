@@ -22,3 +22,8 @@ body {
 .profile h3 {
   margin-top: 0;
 }
+
+.img-brand {
+  height: 20px;
+  margin-right: .3em;
+}
