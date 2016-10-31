@@ -9,3 +9,4 @@ $app->get('/poll/{id}', '\Site\Controller\PollController:poll')->setName('poll')
 $app->post('/poll/{id}/vote', '\Site\Controller\PollController:vote')->setName('vote');
 
 $app->get('/events', '\Site\Controller\EventController:index')->setName('events');
+$app->get('/event/{id}', '\Site\Controller\EventController:event')->setName('event');
