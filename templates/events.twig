@@ -10,7 +10,10 @@
     <div class="col-sm-6">
       <h1>{{ event.title }}</h1>
       <p>
-        {{ event.start_date | date('d/m/Y g:i A') }} - {{ event.end_date | date('d/m/Y g:i A') }}
+        <i class="fa fa-fw fa-clock-o"></i> {{ event.start_date | date('d/m/Y g:i A') }} to {{ event.end_date | date('d/m/Y g:i A') }}
+      </p>
+      <p>
+        <i class="fa fa-fw fa-map-marker"></i> {{ event.location }}
       </p>
       <p>
         {{ event.description }}
