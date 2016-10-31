@@ -2,13 +2,18 @@
 
 {% block content %}
 
-<br />
-
 <div class="container">
+  <div class="page-header">
+    <h1 class="pull-left">{{ mode.current | title }} Events</h1>
+    <span class="pull-right">
+      <a href="{{ path_for('events', { 'mode' : mode.next }) }}" class="btn btn-default btn-valign">{{ mode.next | title }} Events</a>
+    </span>
+    <span class="clearfix"></span>
+  </div>
   <div class="row">
   {% for event in events %}
     <div class="col-sm-6">
-      <h1>{{ event.title }}</h1>
+      <h2>{{ event.title }}</h2>
       <p>
         <i class="fa fa-fw fa-clock-o"></i> {{ event.start_date | date('d/m/Y g:i A') }} to {{ event.end_date | date('d/m/Y g:i A') }}
       </p>

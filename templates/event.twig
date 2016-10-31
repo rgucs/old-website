@@ -12,9 +12,11 @@
   <p>
     <i class="fa fa-fw fa-map-marker"></i> {{ event.location }}
   </p>
+  <hr />
   <p>
     {{ event.description | nl2br }}
   </P>
+  <hr />
   <a href="{{ path_for('events') }}" class="btn btn-success"><i class="fa fa-arrow-left"></i> Back</a>
 </div>
 
