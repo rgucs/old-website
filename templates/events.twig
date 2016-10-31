@@ -15,9 +15,6 @@
       <p>
         <i class="fa fa-fw fa-map-marker"></i> {{ event.location }}
       </p>
-      <p>
-        {{ event.description }}
-      </P>
       <a href="{{ path_for('event', { 'id' : event.id }) }}" class="btn btn-primary">More&hellip;</a>
     </div>
   {% endfor %}
