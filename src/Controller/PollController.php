@@ -7,7 +7,7 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
 class PollController extends Controller {
-  public function index(Request $request, Response $response, $args) {
+  public function index(Request $request, Response $response, $args) : Response {
     // Load all of the Polls here
     $polls = $this->ci->database->table('poll')->get();
 
@@ -16,7 +16,7 @@ class PollController extends Controller {
     ]);
   }
 
-  public function poll(Request $request, Response $response, $args) {
+  public function poll(Request $request, Response $response, $args) : Response {
     // Load a specific Poll here
     $poll = $this->ci->database->table('poll')
       ->where('id', $args['id'])
@@ -36,7 +36,7 @@ class PollController extends Controller {
     throw new NotFoundException($request, $response);
   }
 
-  public function vote(Request $request, Response $response, $args) {
+  public function vote(Request $request, Response $response, $args) : Response {
     // Submit a vote against a Poll
   }
 }
