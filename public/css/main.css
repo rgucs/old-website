@@ -41,3 +41,20 @@ body {
 .main-page-section:not(:last-child) {
   border-bottom: 1px solid lightgrey;
 }
+
+.page-header .btn-valign {
+  margin-top: 25px;
+}
+
+.jumbotron-compsoc {
+  background-color: rgb(56, 69, 79);
+}
+
+.navbar-default {
+  background-color: rgb(56, 69, 79);
+  border: none;
+}
+
+.navbar-default ul li a, .navbar-default .navbar-text {
+  color: white !important;
+}
