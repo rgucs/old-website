@@ -1,0 +1,27 @@
+{
+  "name": "rgucs",
+  "homepage": "https://www.rgucs.com",
+  "authors": [
+    "Luke Fisher <mail@lukefisher.me>"
+  ],
+  "description": "rgucs website",
+  "main": ".",
+  "keywords": [
+    "website",
+    "rgu",
+    "computing",
+    "society"
+  ],
+  "license": "Unknown",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
