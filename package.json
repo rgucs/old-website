@@ -1,0 +1,35 @@
+{
+  "name": "rgucs",
+  "version": "0.1.0",
+  "description": "rgucs website",
+  "main": ".",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGUCode/RGUCS.git"
+  },
+  "keywords": [
+    "rgu",
+    "computing",
+    "society",
+    "website"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RGUCode/RGUCS/issues"
+  },
+  "homepage": "https://github.com/RGUCode/RGUCS#readme"
+}
