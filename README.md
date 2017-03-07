@@ -1,6 +1,6 @@
 # RGU Computing Society Site
 
-This is the current source code for the RGU Computing Society [website](www.rgucs.com).
+This is the current source code for the RGU Computing Society [website](//www.rgucs.com).
 
 # Running The Site
 ## Using Command Line
@@ -22,8 +22,26 @@ If you intend on running it using Apache or nginx
 
 To run the application in development, you can also run this command.
 
-	php composer.phar start
+    php composer.phar start
 
 Run this command to run the test suite
 
-	php composer.phar test
+    php composer.phar test
+
+# Building Stylesheet
+
+You require to have node and npm installed on your machine to build the stylesheet.
+To install the dependency manager (bower) and automation tool (gulp) use the following command:
+
+    npm install -g bower gulp-cli
+
+Run the bower and npm to download all dependencies:
+
+    bower install
+    npm install
+
+Simply run the default or css gulp target:
+
+    gulp css
+
+This will create the public/css/main.css file to be used in the site.
