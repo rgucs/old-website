@@ -45,3 +45,5 @@ Simply run the default or css gulp target:
     gulp css
 
 This will create the public/css/main.css file to be used in the site.
+
+For all of the variables we can change within Bootstrap check out [variables.scss](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss)
