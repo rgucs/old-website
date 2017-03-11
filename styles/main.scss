@@ -19,7 +19,7 @@ body {
 }
 
 .jumbotron-compsoc {
-  background-color: $compsoc-bg-dark-color
+  background-color: $compsoc-bg-dark-color;
 }
 
 .profile {
@@ -51,4 +51,16 @@ body {
 
 .padding-footer {
   padding-top: 2em;
+}
+.navbar{
+  background: rgba(56, 69, 79, 0.76)
+}
+.nav li a {
+  
+  border: 5px;
+  transition: all 0.5s ease;
+}
+
+.nav li a:hover {
+  background-color: rgba(38,46,53,0.76) !important;
 }
