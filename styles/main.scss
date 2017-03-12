@@ -7,10 +7,17 @@ $navbar-default-link-color: white;
 $navbar-default-link-hover-color: white;
 $navbar-default-link-active-color: white;
 
+$trans-grey: rgba(46, 59, 69, 0.76);
+$trans-grey-dk: rgba(38,46,53,0.76);
+$trans-grey-lt: rgba(66,79,89,0.76);
+
 @import 'bootstrap';
 
 body {
   margin-top: $navbar-height;
+  background-color: $compsoc-bg-dark-color;
+  color: #EEEFF0;
+
 }
 
 .img-brand {
@@ -23,8 +30,8 @@ body {
 }
 
 .profile {
+  padding: 1em;
   text-align: center;
-  margin-bottom: 2em;
 
   h3 {
     margin-top: 0;
@@ -33,16 +40,18 @@ body {
 
 .main-page-section {
   padding: 3em 0;
-
+  background-color: $trans-grey;
+  border-radius: 5px;
   @media screen and (min-width: $screen-sm) {
     & h1 {
       margin-top: 0;
     }
   }
 
-  &:not(:last-child) {
-    border-bottom: 1px solid lightgrey;
-  }
+  //&:not(:last-child) {
+    margin-bottom: 1em;
+    border-bottom: 5px solid $trans-grey-dk;
+  //}
 }
 
 .page-header .btn-valign {
@@ -52,9 +61,11 @@ body {
 .padding-footer {
   padding-top: 2em;
 }
+
 .navbar{
-  background: rgba(56, 69, 79, 0.76)
+  background: $trans-grey;
 }
+
 .nav li a {
   
   border: 5px;
@@ -62,5 +73,17 @@ body {
 }
 
 .nav li a:hover {
-  background-color: rgba(38,46,53,0.76) !important;
+  background-color: $trans-grey-dk !important;
+}
+
+h1{
+  text-shadow: 4px 4px 0 rgb(25, 26, 27);
+}
+
+h1 small, .text-muted, .text-info{
+  text-shadow:2px 2px 0 $trans-grey-dk;
+}
+
+.page-header{
+  border-bottom: 1px solid $trans-grey-dk;
 }
