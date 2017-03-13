@@ -32,11 +32,11 @@
           <ul class="nav navbar-nav">
             {{ navbar.link(path_for('events'), 'Events', is_current_path('events')) }}
             {{ navbar.link(path_for('about'), 'About', is_current_path('about')) }}
-            {{ navbar.link(path_for('join-us'), 'Join Us', is_current_path('join-us')) }}
+            {{ navbar.link(path_for('join-us'), 'Join Us <i class="fa fa-fw fa-warning" height=16 width=16></i>', is_current_path('join-us')) }}
           </ul>
           <div class="pull-right hidden-xs">
             <span class="navbar-text hidden-sm">Connect with us:</span>
-            <a class="btn btn-success navbar-btn" target="_blank" href="mailto:compsoc@rgu.ac.uk"><i class="fa fa-fw fa-envelope"></i></a>
+            <a class="btn navbar-btn" target="_blank" href="mailto:compsoc@rgu.ac.uk"><i class="fa fa-fw fa-envelope"></i></a>
             <a class="btn btn-primary navbar-btn" target="_blank" href="https://www.facebook.com/RGUComputingSociety"><i class="fa fa-fw fa-facebook"></i></a>
             <a class="btn btn-info navbar-btn" target="_blank" href="https://twitter.com/RGU_CS"><i class="fa fa-fw fa-twitter"></i></a>
           </div>
