@@ -19,12 +19,14 @@ body {
   margin-top: $navbar-height;
 }
 
+//navbar style
+.navbar{
   background: $trans-grey;
 }
 
 //navbar style
 .nav li a {
-  
+
   border: 5px;
   transition: $transition;
 }
