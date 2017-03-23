@@ -1,50 +1,59 @@
 {% extends "layout.twig" %}
 
 {% block content %}
-<div class="parallax parallax-drone">
-  <div class="jumbotron jumbotron-compsoc">
-    <div class="container">
-      <center>
-        <img class="img-responsive" src="/img/compsoc.png" />
-      </center>
-    </div>
-  </div>
-</div>
 
-<div class="container-fluid main-page-section">
-<div class="col-sm-12">
-  <center>
-   <h1>Regular Meetups</h1>
-    <h2>Come and join the fun!</h2>
-    <p class="lead">
-      We look to hold weekly meetups, alternating each week, on a <b>Wednesday</b> and <b>Thursday</b>.<br />
-      So come along to find out about GitHub, Raspberry Pi, Arduino and Drones.
-    </p>
-  </center>
-  </div>
-</div>
-
-<div class="parallax parallax-group">
+<div class="jumbotron jumbotron-compsoc">
   <div class="container">
-  <div class="col-sm-12 colcol">
-    <h1>Help Sessions</h1>
-    <h2>Assist you with your problems</h2>
-    <p class="lead"> This year we look to hold regular drop in help sessions for you to let us help you.<br/>We are a smart bunch that love helping others. <br/>So why not let us provide advice on that coursework that is
-    </p>
-    </div>
+    <center>
+      <img class="img-responsive" src="/img/compsoc.png" />
+    </center>
   </div>
 </div>
-
-<div class="container-fluid">
+<div class="container">
   <div class="row main-page-section">
-    <div class="col-sm-12">
-    <center>
+    <div class="col-sm-5">
+      {# Image of meetup here #}
+      <img src="/img/meet-up.jpg" alt="Picture of meet-up" class="img-responsive" />
+    </div>
+    <div class="col-sm-7">
+      <h1>Regular Meetups</h1>
+      <h2>Come and join the fun</h2>
+      <p>
+        We look to hold weekly meetups, alternating each week, on a Wednesday and Thursday.<br />
+        So come along to find out about GitHub, Raspberry Pi, Arduino and Drones.
+      </p>
+    </div>
+  </div>
+  <div class="row main-page-section">
+    <div class="col-sm-5">
+      {# Image of speakers at a podium #}
+      <img src="/img/external-speakers.jpg" alt="Speaker at podium" class="img-responsive" />
+    </div>
+    <div class="col-sm-7">
       <h1>External Speakers</h1>
       <h2>Hear from industry leaders</h2>
-      <p class="lead">We hope to introduce you to people that have found their foot in industry.<br />From recent graduates working at a really cool place to big influencers in their chosen field.</p>
-      </center>
+      <p>
+        We hope to introduce you to people that have found their foot in industry.<br />
+        From recent graduates working at a really cool place to big influencers in their chosen field.
+      </p>
+    </div>
+  </div>
+  <div class="row main-page-section">
+    <div class="col-sm-5">
+      {# Image of paper with problems on them #}
+      <img src="/img/help-people.jpg" alt="Picture of coursework" class="img-responsive" />
+    </div>
+    <div class="col-sm-7">
+      <h1>Help Sessions</h1>
+      <h2>Assist you with your problems</h2>
+      <p>
+        This year we look to hold regular drop in help sessions for you to let us help you.<br />
+        We are a smart bunch that love helping others.<br />
+        So why not let us provide advice on that coursework that is
+      </p>
     </div>
   </div>
 </div>
 
 {% endblock %}
+

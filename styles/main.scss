@@ -15,61 +15,14 @@ $transition: all 0.5s ease;
 
 @import 'bootstrap';
 
-//root element styling + parallax support
-html{
-  height: 100%;
-}
-
 body {
   margin-top: $navbar-height;
-  background-color: $compsoc-bg-dark-color;
-  color: #EEEFF0;
-  height:200%;
-
 }
 
-h1{
-  text-shadow: 3px 3px 0 rgb(25, 26, 27);
-}
-
-h1 small, .text-muted, .text-info{
-  text-shadow:2px 2px 0 $trans-grey-dk;
-}
-
-.parallax{
-  height: 40%;
-  background-attachment: fixed;
-  background-color: $compsoc-bg-dark-color;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-drone{
-  background-image: url('../img/drone.jpg');
-}
-
-.parallax-keyboard{
-  background-image: url('../img/keyboard.jpg');
-}
-
-.parallax-hackathon{
-  background-image: url('../img/hackathon.jpg');
-}
-
-.parallax-meetup{
-  background-image: url('../img/meet-up.jpg');
-}
-
-.parallax-group{
-  background-image: url('../img/group.jpg');
-}
-
-//navbar style
-.navbar{
   background: $trans-grey;
 }
 
+//navbar style
 .nav li a {
   
   border: 5px;
@@ -91,16 +44,10 @@ h1 small, .text-muted, .text-info{
 .img-brand {
   height: 20px;
   margin-right: .3em;
-  //@260
-}
-
-//parallax/jumbotron styling
-.img-responsive{
-  max-width: 80%;
 }
 
 .jumbotron-compsoc {
-  background-color: $trans-grey;
+  background-color: $compsoc-bg-dark-color
 }
 
 .profile {
@@ -113,7 +60,6 @@ h1 small, .text-muted, .text-info{
 
 .main-page-section {
   padding: 3em 0;
-  background-color: $trans-grey-dk;
   border-radius: 5px;
   @media screen and (min-width: $screen-sm) {
     & h1 {
@@ -129,14 +75,3 @@ h1 small, .text-muted, .text-info{
 .padding-footer {
   padding-top: 2em;
 }
-
-.page-header{
-  border-bottom: 1px solid $trans-grey-dk;
-}
-
-.colcol{
-  margin-top: 9em;
-  background-color: $trans-grey-dk;
-  padding: 1em;
-}
-
