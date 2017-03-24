@@ -1,5 +1,5 @@
 {% macro link(url, text, active) %}
 <li{% if active %} class="active"{% endif %}>
-  <a href="{{ url }}">{{ text }}</a>
+  <a href="{{ url }}">{{ text|raw }}</a>
 </li>
 {% endmacro %}
