@@ -1,5 +1,7 @@
 {% extends "layout.twig" %}
 
+{% block title %}{{ mode.current | title }} Events - {{ parent() }}{% endblock %}
+
 {% block content %}
 
 <div class="container">
