@@ -14,6 +14,7 @@
       <div class="radio">
         <label for="">
           <input type="radio" name="choice" value="{{ choice.id }}" />
+          {% if not choice.image is null %}<img src="/img/poll/{{ choice.image }}"{% endif %}
           {{ choice.choice }}
         </label>
       </div>
