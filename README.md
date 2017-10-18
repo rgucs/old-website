@@ -1,5 +1,7 @@
 # RGU Computing Society Site
 
+Hello CompSoc!
+
 This is the current source code for the RGU Computing Society [website](//www.rgucs.com).
 
 # Running The Site
